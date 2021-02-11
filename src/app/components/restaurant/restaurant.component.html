@@ -1,0 +1,48 @@
+			<!--- Restaurant-->
+            <div class="container">
+                <div class="row" id="Restaurant">
+                   <div class="col navMenu">
+                         <h2 class="text-center" >~ Instructions ~</h2>
+                   </div> 
+                 </div>
+               
+                 <div class="row bg-light"><br></div>
+                 <div class="row bg-light" *ngFor="let recipe of recipe['meals']">
+                     <div class="col-md-6 order-md-1 order-2" data-aos="fade-up">
+                         <img class="img-fluid " src="{{recipe.strMealThumb}}">
+                     </div>
+                     <div class="col-md-6 order-md-12 order-1">
+                         <h3>{{recipe.strMeal}}</h3>
+                         <p>{{recipe.strInstructions}}</p>
+                         <h5>Ingredients & dosage</h5>
+                         <ul> 
+                             <li >{{recipe.strIngredient1}}:  <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient2]!=''">{{recipe.strIngredient2}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient3]!=''">{{recipe.strIngredient3}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient4]!=''">{{recipe.strIngredient4}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient5]!=''">{{recipe.strIngredient5}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient6]!=''">{{recipe.strIngredient6}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient7]!=''">{{recipe.strIngredient7}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient8]!=''">{{recipe.strIngredient8}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient9]!=''">{{recipe.strIngredient9}}:   <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient10]!=''">{{recipe.strIngredient10}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient11]!=''">{{recipe.strIngredient11}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient12]!=''">{{recipe.strIngredient12}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient13]!=''">{{recipe.strIngredient13}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient14]!=''">{{recipe.strIngredient14}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient15]!=''">{{recipe.strIngredient15}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient16]!=''">{{recipe.strIngredient16}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient17]!=''">{{recipe.strIngredient17}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient18]!=''">{{recipe.strIngredient18}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient19]!=''">{{recipe.strIngredient19}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                             <li *ngIf="[recipe.strIngredient20]!=''">{{recipe.strIngredient20}}: <strong>{{recipe.strMeasure1}}</strong></li>
+                            </ul>
+
+                            <h5 class="" > <strong>Origine:</strong>{{recipe.strArea}}</h5>
+
+
+
+                     </div>
+                 </div> 
+                 <!--- End of Restaurant -->
+            </div>

@@ -1,0 +1,38 @@
+.btn-circle.btn-xl {
+    width: 40px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+  }
+  .contain{
+width: 100%;
+position: relative;
+
+margin-bottom: 40px;
+
+  }
+
+  span{
+    font-size: 2em;
+    background-color: aqua;
+    letter-spacing: 15px;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+
+  .col h2{
+
+    margin-top: 35px;
+  }
+
+  @media (min-width: 1000px){
+
+    .contain{
+
+      margin-left: 20%;
+      margin-top: 30px;
+        }
+
+  }

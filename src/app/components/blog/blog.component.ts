@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy  } from '@angular/core';
 import { HttpClient } from "@angular/common/http"
 import { map } from "rxjs/operators"
 import { Recipe } from "src/app/models/recipe"
@@ -12,15 +12,15 @@ import {Router} from '@angular/router';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css']
 })
-export class BlogComponent implements OnInit {
+export class BlogComponent implements OnInit, OnDestroy  {
  
   meals:any
   constructor(private sservice: ServeRecipeService,private route: ActivatedRoute, private router: Router) { }
-
+ 
   ngOnInit(): void {
     //this.receiveReceipe()
-    this.filterByFirstLetter()
-    this.router.navigateByUrl('/filter/e');
+    this.filterByCountryName()
+  this.router.navigateByUrl('/filter/American');
 
 
   }
@@ -36,19 +36,34 @@ receiveReceipe(){
     }
   )
 }
+filterByCountryName(){
  
-
+  const a = this.route.snapshot.paramMap.get('a');
+this.sservice.getReceipeByCountry(a).subscribe(
+  (meals)=>{
+    this.meals=meals
+    
+  }
+    
+)
+ 
+}
 
 
 filterByFirstLetter(){
+ 
   const a = this.route.snapshot.paramMap.get('a');
 this.sservice.getReceipeByLetter(a).subscribe(
   (meals)=>{
     this.meals=meals
-    console.log(this.meals)
+    
   }
+    
 )
-
+ 
 }
 
+ngOnDestroy(){
+  this.filterByCountryName()
+}
 }

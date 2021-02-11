@@ -8,6 +8,21 @@
     margin-left: 47%;
   }
 
-  .col h5{
-    margin-top: 0px;
+  .col h3{
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
+
+@media(min-width:1000px){
+  img{
+    margin-left: 55%;
+    max-height: 400px;
+  }
+
+  .btn-secondary{
+    margin-left: 85%;
+  }
+}
+.btn-secondary{
+  margin-top: 20px;
+}

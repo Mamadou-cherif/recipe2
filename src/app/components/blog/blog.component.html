@@ -4,33 +4,36 @@
     <div class="col navMenu"> 
           <h2 class="text-center" >~ List of Recipes ~</h2>
           <p class="text-center" >filter the recipe by thier first letter</p>  
-        <div class="contain">
-          <span (click)="filterByFirstLetter()" routerLink="/filter/a"> a</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/b" >b</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/c" >c</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/d"  >d</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/e"  >e</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/f" >f</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/g" >g</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/h" >h</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/i" >i</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/j" >j</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/k" >k</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/l" >l</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/m" >m</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/n" >n</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/o">o</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/p" >p</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/q" >q</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/r" >r</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/s" >s</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/t" >t</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/u" >u</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/v" >v</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/w" >w</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/x" >x</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/y" >y</span>
-          <span (click)="filterByFirstLetter()" routerLink="/filter/z" >z</span>
+        <div class="contain" > 
+          <button (click)="filterByCountryName()" routerLink="/filter/British">British</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/American">American</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/French">France</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Canadian">canada</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Jamaican"  >jamaica</button> 
+          <button (click)="filterByCountryName()" routerLink="/filter/Chinese">china</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Dutch" >Dutch</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Egyptian" >Egyptian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Greek" >Greek</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Indian" >Indian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Irish" >Irish</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Italian" >Italian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Japanese" >Japanese</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Kenyan" >Kenyan</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Malaysian">Malaysian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Mexican" >Mexican</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Moroccan" >Moroccan</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Croatian" >Croatian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Norwegian" >Norwegian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Portuguese" >Portuguese</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Russian" >Russian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Argentinian" >Argentinian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Spanish" >Spanish</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Thai" >Thai</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Vietnamese" >Vietnamese</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Turkish" >Turkish</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Tunisian" >Tunisian</button>
+          <button (click)="filterByCountryName()" routerLink="/filter/Polish" >Polish</button>
+
       </div>
     </div> 
   </div>
@@ -41,7 +44,7 @@
           <img class="card-img-top img-fluid" src="{{meals.strMealThumb}}">
           <div class="card-body">
             <h5 class="card-title">~ {{meals.strMeal}} ~</h5>
-          <a routerLink="/detailRecipe/{{meals.idMeal}}" class="btn btn-primary">Go somewhere</a>
+          <a routerLink="/detailRecipe/{{meals.idMeal}}" class="btn btn-primary">Read more</a>
           </div> 
       </div>
     </div>

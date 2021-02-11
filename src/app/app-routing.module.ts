@@ -23,7 +23,7 @@ const routes: Routes = [
   {path:"detailRecipe/:id", component: RestaurantComponent },
   {path:"filter/:a", component: BlogComponent }
 ];
-
+ 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -22,7 +22,7 @@ baseUrl="https://www.themealdb.com/api/json/v1/1/search.php?f=a"
   }
 
   getSingleReceipe(id: any){
-
+   
     return this._http.get<any>("https://www.themealdb.com/api/json/v1/1/lookup.php?i="+id).pipe(
       map(reponse=>reponse)
       
@@ -46,6 +46,15 @@ baseUrl="https://www.themealdb.com/api/json/v1/1/search.php?f=a"
     return this._http.get<any>("https://www.themealdb.com/api/json/v1/1/random.php")
         .pipe(
           map(response=>response))
+  }
+
+  getReceipeByCountry(a:any){
+
+    return this._http.get<any[]>("https://www.themealdb.com/api/json/v1/1/filter.php?a="+a).pipe(
+      map(reponse=>reponse)
+      
+      )
+    
   }
 
 }

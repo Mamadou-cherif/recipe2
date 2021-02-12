@@ -5,6 +5,7 @@ import { ImageHomeComponent } from './components/image-home/image-home.component
 import { LocationComponent } from './components/location/location.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { ReplacingComponent } from './components/replacing/replacing.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: "homeImage", component:ImageHomeComponent},
   {path: "blog", component: BlogComponent},
   {path:"detailRecipe/:id", component: RestaurantComponent },
-  {path:"filter/:a", component: BlogComponent }
+  {path:"filter/:a", component: BlogComponent },
+  {path:"replace", component:ReplacingComponent}
 ];
  
 @NgModule({

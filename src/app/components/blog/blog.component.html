@@ -1,53 +1,52 @@
-<div class="container">  
+<div class="container">   
   <!--- Start of Menu-->
-          <div class="row" id="Menu">
-    <div class="col navMenu"> 
-          <h2 class="text-center" >~ List of Recipes ~</h2>
-          <p class="text-center" >filter the recipe by thier first letter</p>  
-        <div class="contain" > 
-          <button (click)="filterByCountryName()" routerLink="/filter/British">British</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/American">American</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/French">France</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Canadian">canada</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Jamaican"  >jamaica</button> 
-          <button (click)="filterByCountryName()" routerLink="/filter/Chinese">china</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Dutch" >Dutch</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Egyptian" >Egyptian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Greek" >Greek</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Indian" >Indian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Irish" >Irish</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Italian" >Italian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Japanese" >Japanese</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Kenyan" >Kenyan</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Malaysian">Malaysian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Mexican" >Mexican</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Moroccan" >Moroccan</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Croatian" >Croatian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Norwegian" >Norwegian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Portuguese" >Portuguese</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Russian" >Russian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Argentinian" >Argentinian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Spanish" >Spanish</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Thai" >Thai</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Vietnamese" >Vietnamese</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Turkish" >Turkish</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Tunisian" >Tunisian</button>
-          <button (click)="filterByCountryName()" routerLink="/filter/Polish" >Polish</button>
+          <div class="row" id="Menu"> 
+    <div class="col navMenu">   
+          <h2 class="text-center"> ~ List of Recipes ~ </h2>
+          <p class="text-center"> filter the recipe by thier first letter </p>  
+        <div class="contain">  
+          <button  (click)="filterByCountryName1()"> British </button>
+          <button (click)="filterByCountryName2()"> American </button>
+          <button (click)="filterByCountryName3()"> France </button>
+          <button (click)="filterByCountryName4()"> canada </button>
+          <button (click)="filterByCountryName5()"> jamaica </button> 
+          <button (click)="filterByCountryName6()"> china </button>
+          <button (click)="filterByCountryName7()"> Dutch </button>
+          <button (click)="filterByCountryName8()"> Egyptian </button>
+          <button (click)="filterByCountryName9()"> Greek </button>
+          <button (click)="filterByCountryName10()"> Indian </button>
+          <button (click)="filterByCountryName11()"> Irish </button>
+          <button (click)="filterByCountryName12()"> Italian </button>
+          <button (click)="filterByCountryName13()"> Japanese </button>
+          <button (click)="filterByCountryName14()"> Kenyan </button>
+          <button (click)="filterByCountryName15()"> Malaysian </button>
+          <button (click)="filterByCountryName16()"> Mexican </button>
+          <button (click)="filterByCountryName17()"> Moroccan </button>
+          <button (click)="filterByCountryName18()"> Croatian </button>
+          <button (click)="filterByCountryName20()"> Portuguese </button>
+          <button (click)="filterByCountryName21()"> Russian </button>
+          <button (click)="filterByCountryName22()"> Argentinian </button>
+          <button (click)="filterByCountryName23()"> Spanish </button>
+          <button (click)="filterByCountryName24()"> Thai </button>
+          <button (click)="filterByCountryName25()"> Vietnamese </button>
+          <button (click)="filterByCountryName26()"> Turkish </button>
+          <button (click)="filterByCountryName27()"> Tunisian </button>
+          <button (click)="filterByCountryName28()"> Polish </button>
 
-      </div>
-    </div> 
-  </div>
-  <div class="row bg-light">
+       </div>
+     </div> 
+   </div>
+  <div class="row bg-light"> 
  
-    <div class="col-md-4" data-aos="slide-up" *ngFor="let meals of meals['meals']">
-      <div class="card">
-          <img class="card-img-top img-fluid" src="{{meals.strMealThumb}}">
-          <div class="card-body">
-            <h5 class="card-title">~ {{meals.strMeal}} ~</h5>
-          <a routerLink="/detailRecipe/{{meals.idMeal}}" class="btn btn-primary">Read more</a>
-          </div> 
-      </div>
-    </div>
-  </div>
+    <div class="col-md-4" data-aos="slide-up" *ngFor="let meals of meals['meals']"> 
+      <div class="card"> 
+          <img class="card-img-top img-fluid" src="{{meals.strMealThumb}}"> 
+          <div class="card-body"> 
+            <h5 class="card-title"> ~ {{meals.strMeal}} ~ </h5>
+          <a routerLink="/detailRecipe/{{meals.idMeal}}" class="btn btn-primary"> Read more </a>
+           </div> 
+       </div>
+     </div>
+   </div>
   <!--- End of Menu -->
-</div>
+ </div>

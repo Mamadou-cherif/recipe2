@@ -14,6 +14,7 @@ import { ImageHomeComponent } from './components/image-home/image-home.component
 import { BlogComponent } from './components/blog/blog.component';
 import {HttpClientModule} from "@angular/common/http"
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ReplacingComponent } from './components/replacing/replacing.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FooterComponent,
     NavigationComponent,
     ImageHomeComponent,
-    BlogComponent
+    BlogComponent,
+    ReplacingComponent
   ],
   imports: [
     BrowserModule,

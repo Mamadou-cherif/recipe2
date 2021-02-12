@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: "nav", component: NavigationComponent},
   {path: "restaurant", component: ReservationComponent},
   {path: "homeImage", component:ImageHomeComponent},
-  {path: "blog", component: BlogComponent},
+  {path: "recipe", component: BlogComponent},
   {path:"detailRecipe/:id", component: RestaurantComponent },
   {path:"filter/:a", component: BlogComponent },
   {path:"replace", component:ReplacingComponent}

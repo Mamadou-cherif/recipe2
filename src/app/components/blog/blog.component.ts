@@ -15,12 +15,14 @@ import {Router} from '@angular/router';
 export class BlogComponent implements OnInit  {
  
   meals:any
-  constructor(private sservice: ServeRecipeService,private route: ActivatedRoute, private router: Router) { }
+  constructor(private sservice: ServeRecipeService,private route: ActivatedRoute, private router: Router) {
+   
+   }
  
   ngOnInit(): void {
     //this.receiveReceipe()
     this.filterByCountryName()
-
+    
 
   }
 

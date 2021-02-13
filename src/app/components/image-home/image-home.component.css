@@ -5,3 +5,23 @@
 img{
     max-height: 617px;
 }
+
+.aboutapp{ 
+
+
+padding:5% 5% 0% 5%; 
+
+}
+
+.containere{
+margin-bottom: 7%;
+}
+
+@media (min-width:1000px){
+
+    .aboutapp ,.containere, app-footer{
+       display: none;
+    }
+}
+
+
